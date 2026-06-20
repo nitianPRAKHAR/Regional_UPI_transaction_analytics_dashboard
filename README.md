@@ -32,7 +32,8 @@ An interactive **Power BI dashboard** built to analyze and visualize **UPI trans
 
 * `Regional_UPI_Transaction_Analytics.pbix` – Power BI Dashboard File
 * `README.md` – Project Documentation
-* Dashboard Screenshots (Optional)
+* Dashboard PDF
+* Dataset used zip file
 
 ## 🎯 Project Objective
 
