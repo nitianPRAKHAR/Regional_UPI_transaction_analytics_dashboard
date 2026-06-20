@@ -127,6 +127,40 @@ These KPIs help monitor:
 - 🚨 Fraud detection and risk monitoring
 - 📊 Operational efficiency
 - 📈 Digital payment adoption trends
+  
+---  
+
+## 📅 Date Table - Calculated Columns
+
+The following calculated columns were created using DAX to support time-based analysis and reporting.
+
+| Column Created | DAX Formula |
+|---------------|-------------|
+| Year | `YEAR('Date'[Date])` |
+| Month | `MONTH('Date'[Date])` |
+| MonthName | `FORMAT('Date'[Date], "MMMM")` |
+| DayName | `FORMAT('Date'[Date], "dddd")` |
+| IsWeekend | `IF(WEEKDAY('Date'[Date]) > 5, 1, 0)` |
+
+---
+
+### 📌 Purpose of Each Column
+
+| Column | Description |
+|---------|------------|
+| Year | Extracts the year from the date. |
+| Month | Extracts the month number (1–12). |
+| MonthName | Returns the full month name (January, February, etc.). |
+| DayName | Returns the day name (Monday, Tuesday, etc.). |
+| IsWeekend | Flags weekends with 1 and weekdays with 0. |
+
+### 💡 Business Use Cases
+
+- Year-wise trend analysis
+- Month-wise transaction analysis
+- Weekday vs Weekend transaction comparison
+- Time-based filtering and drill-downs
+- Seasonal pattern identification
 
 ## 🎯 Project Objective
 
